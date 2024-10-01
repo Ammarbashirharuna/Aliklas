@@ -1,0 +1,20 @@
+{
+    "products":[
+        {
+            "id":"1",
+            "title":"Abaya",
+            "img":"aliklas.jpg"
+        },
+        {
+            "id":"2",
+            "title":"Less",
+            "img":"aliklas.jpg"
+        },
+        {
+            "id":"3",
+            "title":"Arabian Design",
+            "img":"aliklas.jpg"
+        }
+
+    ]
+}
