@@ -26,7 +26,7 @@ const HeaderSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 1 }}
         >
-          The Home of Trust
+          The Home Quality
         </motion.span>
       </motion.h2>
     </div>

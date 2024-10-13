@@ -1,21 +1,21 @@
 const Product = () => {
   const products = [
     {
-      image: "3.jpg",
-      note: "Product 1 description",
+      image: "1.jpg",
+      note: "We specialize in importing high quality Abaya from Best countries tha will satisfied Customers need",
     },
     {
       image: "2.jpg",
-      note: "Product 2 description",
+      note: "At Alikhlas You can find any high quality product that all the customers are looking for",
     },
     {
       image: "1.jpg",
-      note: "Product 3 description",
+      note: "We can Deliver any type of Less to your shop any where you are",
     },
     {
       image: "7.jpg",
-      note: "Product 4 description",
-    },
+      note: "Customer first as always at alikhlas you will find full satisfaction about any kind of product you are looking for",
+    },  
   ];
 
   return (

@@ -1,6 +1,8 @@
 import AboutUs from "../components/AboutUs";
+import Footer from "../components/Footer";
 import Mission from "../components/Mission";
-import Team from "../components/team";
+import Patners from "../components/Patners";
+
 
 
 const About = () => {
@@ -9,12 +11,15 @@ const About = () => {
       className="h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url('patners.jpeg')` }}
     >
-      
+
       <AboutUs />
+      <Patners />
       <Mission />
-      <Team />
-    
-  
+      <Footer />
+   
+
+
+
     </div>
   );
 };

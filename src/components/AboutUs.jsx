@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <section
-      className="min-h-screen bg-cover bg-center py-20 relative"
+      className="relative bg-cover bg-center py-20"
       style={{ backgroundImage: `url('patners.jpeg')` }} // Add your background image path here
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div> {/* Dark overlay */}
-      
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-60 h-full w-full"></div>
+
       <div className="relative z-10 py-12 px-6 md:px-20 text-white">
         {/* Header Section */}
         <motion.h1
@@ -26,8 +27,10 @@ const AboutUs = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
         >
-          At Aliklas, we specialize in providing top-notch export and import services, helping businesses connect with global markets. 
-          Whether you're looking to ship goods from China or other parts of the world, we ensure safe, reliable, and timely delivery to Nigeria and beyond.
+          At Aliklas, we specialize in providing top-notch export and import
+          services, helping businesses connect with global markets. Whether you
+          are looking to ship goods from China or other parts of the world, we
+          ensure safe, reliable, and timely delivery to Nigeria and beyond.
         </motion.p>
 
         {/* Values Section */}
@@ -44,7 +47,8 @@ const AboutUs = () => {
               Global Network
             </h3>
             <p>
-              Our extensive global network guarantees smooth logistics and shipping processes across borders.
+              Our extensive global network guarantees smooth logistics and
+              shipping processes across borders.
             </p>
           </motion.div>
 
@@ -60,7 +64,8 @@ const AboutUs = () => {
               Customer-Centric Approach
             </h3>
             <p>
-              We put our clients first, ensuring transparent communication and on-time delivery every step of the way.
+              We put our clients first, ensuring transparent communication and
+              on-time delivery every step of the way.
             </p>
           </motion.div>
 
@@ -76,7 +81,8 @@ const AboutUs = () => {
               Expert Team
             </h3>
             <p>
-              Our team of logistics experts brings years of experience, ensuring smooth operations across international trade.
+              Our team of logistics experts brings years of experience, ensuring
+              smooth operations across international trade.
             </p>
           </motion.div>
         </div>
