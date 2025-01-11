@@ -32,12 +32,14 @@ const Product = () => {
           <p className="text-lg font-medium text-center text-indigo-950 hover:text-indigo-700 transition-colors duration-300">
             {product.note}
           </p>
+          
         </div>
       ))}
     </div>
   </div>
 
     </>
+
   );
 };
 
