@@ -12,28 +12,31 @@ const Product = () => {
       image: "1.jpg",
       note: "We can Deliver any type of Less to your shop any where you are",
     },
-    {
-      image: "7.jpg",
-      note: "Customer first as always at alikhlas you will find full satisfaction about any kind of product you are looking for",
-    },  
+  
   ];
 
   return (
     <>
-      <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {products.map((product, index) => (
-            <div key={index} className="bg-white p-4 shadow-lg rounded-lg">
-              <img
-                src={product.image}
-                alt={product.note}
-                className="w-full h-64 object-cover rounded-lg mb-4"
-              />
-              <p className="text-gray-700 text-center">{product.note}</p>
-            </div>
-          ))}
+    <div className="container mx-auto p-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {products.map((product, index) => (
+        <div
+          key={index}
+          className="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+        >
+          <img
+            src={product.image}
+            alt={product.note}
+            className="w-full h-64 object-cover rounded-lg mb-4"
+          />
+          <p className="text-lg font-medium text-center text-indigo-950 hover:text-indigo-700 transition-colors duration-300">
+            {product.note}
+          </p>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+
     </>
   );
 };
