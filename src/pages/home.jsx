@@ -1,8 +1,9 @@
 import Hero from "../components/Hero";
-import About from "../components/About";
+import Product from "../components/product";
 import Ourservices from "../components/ourservices";
 import Footer from "../components/Footer";
 import Testimonials from "../components/Testimonial";
+import BackToTopButton from "../components/BackToTopButton";
 
 
 
@@ -11,9 +12,10 @@ const Home = () => {
     <>
       <Hero />
       <Ourservices />
-      <About />
-      <Footer />
+      <Product />
       <Testimonials/>
+      <Footer />
+      <BackToTopButton/>
   
     </>
   )

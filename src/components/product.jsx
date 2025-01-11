@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const Product = () => {
   const products = [
     {
@@ -17,27 +18,50 @@ const Product = () => {
 
   return (
     <>
-    <div className="container mx-auto p-6">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {products.map((product, index) => (
-        <div
-          key={index}
-          className="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
-        >
-          <img
-            src={product.image}
-            alt={product.note}
-            className="w-full h-64 object-cover rounded-lg mb-4"
-          />
-          <p className="text-lg font-medium text-center text-indigo-950 hover:text-indigo-700 transition-colors duration-300">
-            {product.note}
+      <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-6">
+        {/* Section Title */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-extrabold text-indigo-950">
+            Explore Our Products
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Browse through our carefully curated selection of top-quality products designed to meet your needs.
           </p>
-          
         </div>
-      ))}
-    </div>
-  </div>
 
+        {/* Product Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {products.map((product, index) => (
+            <motion.div
+              key={index}
+              className="group relative bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * index, duration: 0.5 }}
+            >
+              {/* Product Image */}
+              <img
+                src={product.image}
+                alt="Product"
+                className="w-full h-64 object-cover"
+              />
+
+              {/* Product Details */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-lg font-semibold text-white">
+                  {product.name}
+                </h3>
+                <p className="text-sm text-gray-300 mt-2">
+                  {product.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
     </>
 
   );

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ContactTitle from "../components/contact";
 import Icons from "../components/icons";
+import BackToTopButton from "../components/BackToTopButton";
 const Contact = () => {
   return (
     <section className="bg-cover bg-center bg-indigo-950 py-20 min-h-screen">
@@ -79,6 +80,7 @@ const Contact = () => {
 
       <Icons />
       </div>
+      <BackToTopButton/>
     </section>
   );
 };

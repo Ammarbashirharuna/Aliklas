@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs";
+import BackToTopButton from "../components/BackToTopButton";
 import Footer from "../components/Footer";
 import Mission from "../components/Mission";
 import Patners from "../components/Patners";
@@ -16,6 +17,7 @@ const About = () => {
       <Patners />
       <Mission />
       <Footer />
+      <BackToTopButton/>
    
 
 
